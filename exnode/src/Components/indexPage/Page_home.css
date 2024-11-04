@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+}
+/* outside_section */
+.container-outside{
+    width: 100%;
+    height: 2000px;
+    background-color: #C8FFE1;
+}
+.container-logo-outside{
+    text-align: center;
+}
+#logo_exnode-outside{
+    width: 100px;
+    object-fit: cover;
+}
+#heading_name-outside{
+    font-size: 160px;
+    color: #000000;
+    opacity: 10%;
+    margin-top: -50px;
+}
+.con-logo{
+    margin-top: -155px;
+    position: absolute;
+    left: 47%;
+}
