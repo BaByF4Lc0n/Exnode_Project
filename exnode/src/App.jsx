@@ -1,11 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-
 function App() {
-  return (
-    <div className='navigation'>
-    </div>
-  );
+  <div>
+    <main />
+  </div>
 }
 
 export default App;
