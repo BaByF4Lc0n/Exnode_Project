@@ -13,16 +13,18 @@ function Page_home(){
         </div>
       </div>
       {/* inside */}
-      <div className='navigation'>
-        <div className='container-navigation'>
-          <div className='sub-container-navigation'>
-            <ul className='menubar'>
-              <li className='item-navigation'><a href='#'>หน้าแรก</a></li>
-              <li className='item-navigation'><a href='#'>วิเคราะห์</a></li>
-              <li className='item-navigation'><a href='#'>รายการ</a></li>
-              <li className='item-navigation'><a href='#'>ติดต่อ</a></li>
-              <li className='item-navigation'><a href='#'>ข่าวสาร</a></li>
-            </ul>
+      <div className='body-section-layer2'>
+        <div className='navigation'>
+          <div className='container-navigation'>
+            <div className='sub-container-navigation'>
+              <ul className='menubar'>
+                <li className='item-navigation'><a href='#'>หน้าแรก</a></li>
+                <li className='item-navigation'><a href='#'>วิเคราะห์</a></li>
+                <li className='item-navigation'><a href='#'>รายการ</a></li>
+                <li className='item-navigation'><a href='#'>ติดต่อ</a></li>
+                <li className='item-navigation'><a href='#'>ข่าวสาร</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
