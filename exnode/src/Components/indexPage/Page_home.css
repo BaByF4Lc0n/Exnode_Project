@@ -37,12 +37,25 @@ body{
     background-color: #ffff;
     margin: 0 auto;
     border-radius: 10px;
+    box-shadow: 2px 0px 13px 9px #969696;
 }
 /* navigationbar-section */
 .navigation{
     width: 100%;
     height: 100px;
+    background-color: #dcdcdc;
 }
 .menubar{
     list-style: none;
+    display: flex;
+}
+.item-navigation,a{
+    text-decoration: none;
+}
+#logo_exnode-navigationbar{
+    width: 80px;
+    height: 80px;
+}
+.sub-container-navigation{
+    display: flex;
 }

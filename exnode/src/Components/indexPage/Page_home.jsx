@@ -1,6 +1,7 @@
 import React from 'react'
 import './Page_home.css'
 import image_logo from '../assets/Logo_exnode.png';
+import image_logo_navigation from '../assets/logo_exnode_No-tect.png';
 function Page_home(){
   return (
     // outside
@@ -17,6 +18,9 @@ function Page_home(){
         <div className='navigation'>
           <div className='container-navigation'>
             <div className='sub-container-navigation'>
+              <div className='container-logo-navigation'>
+                <img src={image_logo_navigation} alt='logo-inside' id='logo_exnode-navigationbar'></img>
+              </div>
               <ul className='menubar'>
                 <li className='item-navigation'><a href='#'>หน้าแรก</a></li>
                 <li className='item-navigation'><a href='#'>วิเคราะห์</a></li>
