@@ -44,6 +44,7 @@ body{
     width: 100%;
     height: 100px;
     background-color: #dcdcdc;
+    border-radius: 10px 10px 0 0;
 }
 .menubar{
     list-style: none;
@@ -60,3 +61,4 @@ body{
 .sub-container-navigation{
     display: flex;
 }
+/* button */
