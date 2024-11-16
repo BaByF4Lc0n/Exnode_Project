@@ -2,6 +2,7 @@ import React from 'react'
 import './Page_home.css'
 import image_logo from '../assets/Logo_exnode.png';
 import image_logo_navigation from '../assets/logo_exnode_No-tect.png';
+import login_page from'../loginPage/login.jsx';
 function Page_home(){
   return (
     // outside
@@ -22,11 +23,12 @@ function Page_home(){
                 <img src={image_logo_navigation} alt='logo-inside' id='logo_exnode-navigationbar'></img>
               </div>
               <ul className='menubar'>
-                <li className='item-navigation'><a href='#'>หน้าแรก</a></li>
-                <li className='item-navigation'><a href='#'>วิเคราะห์</a></li>
-                <li className='item-navigation'><a href='#'>รายการ</a></li>
-                <li className='item-navigation'><a href='#'>ติดต่อ</a></li>
-                <li className='item-navigation'><a href='#'>ข่าวสาร</a></li>
+                <li className='item-navigation '><a href={login_page}>หน้าแรก</a></li>
+                <li className='item-navigation '><a href={login_page}>ธุรกรรม</a></li>
+                <li className='item-navigation '><a href='#'>วิเคราะห์</a></li>
+                <li className='item-navigation '><a href='#'>รายการ</a></li>
+                <li className='item-navigation '><a href='#'>ติดต่อ</a></li>
+                <li className='item-navigation '><a href='#'>ข่าวสาร</a></li>
               </ul>
             </div>
           </div>
