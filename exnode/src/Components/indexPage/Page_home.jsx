@@ -16,6 +16,7 @@ function Page_home(){
       </div>
       {/* inside */}
       <div className='body-section-layer2'>
+        {/* navigationbar-section */}
         <div className='navigation'>
           <div className='container-navigation'>
             <div className='sub-container-navigation'>
@@ -33,10 +34,19 @@ function Page_home(){
             </div>
           </div>
         </div>
+        {/* end-navigation-section */}
+        <div className='container-banner'>
+        <div className='banner'>
+            <div  className='container-heading-exnode'>
+                
+            </div>
+        </div>
+      </div>
       </div>
       </div>
     </div>
   )
 }
+
 
 export default Page_home;

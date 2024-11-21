@@ -42,8 +42,6 @@ body{
 /* navigationbar-section */
 .navigation{
     width: 100%;
-    height: 100px;
-    background-color: #dcdcdc;
     border-radius: 10px 10px 0 0;
 }
 .menubar{
@@ -87,4 +85,10 @@ body{
 }
 .sub-container-navigation{
     display: flex;
+}
+/* stylist-banner-section */
+.banner{
+    width: 100%;
+    height: 500px;
+    background-color: #000000;
 }
