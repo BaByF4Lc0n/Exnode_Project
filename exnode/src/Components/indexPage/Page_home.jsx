@@ -3,6 +3,7 @@ import './Page_home.css'
 import image_logo from '../assets/Logo_exnode.png';
 import image_logo_navigation from '../assets/logo_exnode_No-tect.png';
 import login_page from'../loginPage/login.jsx';
+import phone_image from '';
 function Page_home(){
   return (
     // outside
@@ -38,7 +39,13 @@ function Page_home(){
         <div className='container-banner'>
         <div className='banner'>
             <div  className='container-heading-exnode'>
-                
+                <h1>APP จัดการธุรกรรมเกี่ยวกับภาษี</h1>
+                <p>แอป EXNODE คำนวณภาษีเงินได้บุคคลธรรมดา วิเคราะห์ค่าใช้จ่ายได้เงินคืนภาษีสูงสุด</p>
+            </div>
+            <div className='image_banner_icon'>
+              <div className='phone'>
+                <img src={image_logo} alt='logo-inside' id='logo_exnode-navigationbar'></img>
+              </div>
             </div>
         </div>
       </div>
