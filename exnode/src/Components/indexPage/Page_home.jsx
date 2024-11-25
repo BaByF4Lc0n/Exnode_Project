@@ -3,7 +3,6 @@ import './Page_home.css'
 import image_logo from '../assets/Logo_exnode.png';
 import image_logo_navigation from '../assets/logo_exnode_No-tect.png';
 import login_page from'../loginPage/login.jsx';
-import phone_image from '';
 function Page_home(){
   return (
     // outside
