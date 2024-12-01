@@ -146,6 +146,11 @@ body{
     height: 45px;
     border-radius: 10px;
 }
+.buttonDownload:hover{
+    transition: 0.3s;
+    width: 170px;
+    height: 50px;
+}
 .imageDownload{
     width: 100%;
     height: 100%;
