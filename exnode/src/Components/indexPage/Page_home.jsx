@@ -3,6 +3,10 @@ import './Page_home.css'
 import image_logo from '../assets/Logo_exnode.png';
 import image_logo_navigation from '../assets/logo_exnode_No-tect.png';
 import login_page from'../loginPage/login.jsx';
+import mobile_anaylisePage from '../assets/mobile_img/mobile_analysit.png';
+import macbook from '../assets/Laptop_img/macbook_noScreen.png';
+import google_play from '../assets/playstore&appStoer/1664287128google-play-store-logo-png.png';
+import app_store from '../assets/playstore&appStoer/app-store-google-play-button-png-favpng-FTFfzCVmWnedDG1qp2K2giafF.jpg';
 function Page_home(){
   return (
     // outside
@@ -24,8 +28,8 @@ function Page_home(){
                 <img src={image_logo_navigation} alt='logo-inside' id='logo_exnode-navigationbar'></img>
               </div>
               <ul className='menubar'>
-                <li className='item-navigation '><a href={login_page}>หน้าแรก</a></li>
-                <li className='item-navigation '><a href={login_page}>ธุรกรรม</a></li>
+                <li className='item-navigation '><a href='#'>หน้าแรก</a></li>
+                <li className='item-navigation '><a href='#'>ธุรกรรม</a></li>
                 <li className='item-navigation '><a href='#'>วิเคราะห์</a></li>
                 <li className='item-navigation '><a href='#'>รายการ</a></li>
                 <li className='item-navigation '><a href='#'>ติดต่อ</a></li>
@@ -37,13 +41,26 @@ function Page_home(){
         {/* end-navigation-section */}
         <div className='container-banner'>
         <div className='banner'>
+          <div className='container-heading'>
             <div  className='container-heading-exnode'>
-                <h1>APP จัดการธุรกรรมเกี่ยวกับภาษี</h1>
-                <p>แอป EXNODE คำนวณภาษีเงินได้บุคคลธรรมดา วิเคราะห์ค่าใช้จ่ายได้เงินคืนภาษีสูงสุด</p>
+                <h1 id='heading-exnode'>APP จัดการธุรกรรมเกี่ยวกับภาษี</h1>
+                <p id='paragraph-exnode'>แอป EXNODE คำนวณภาษีเงินได้บุคคลธรรมดา วิเคราะห์ค่าใช้จ่ายได้เงินคืนภาษีสูงสุด</p>
+                <div className='container-downloadSection'>
+                    <h2 id='heading-freedownload'>ดาวน์โหลดฟรี</h2>
+                    <div className='container-buttonDownload'>
+                      {/* playStoreDownload */}
+                      <a href='#'><div className='buttonDownload' alt='playstore'><img src={google_play} className='imageDownload'></img></div></a>
+                      <span className='space'></span>
+                      {/* AppStoreDownload */}
+                      <a href='#'><div className='buttonDownload' alt='playstore'><img src={app_store} className='imageDownload'></img></div></a>
+                    </div>
+                </div>
             </div>
+          </div>
             <div className='image_banner_icon'>
               <div className='phone'>
-                <img src={image_logo} alt='logo-inside' id='logo_exnode-navigationbar'></img>
+                <img src={mobile_anaylisePage} alt='Mobile_image' id='phone_imageBanner'></img>
+                <img src={macbook} alt='MacbookImgae' id='Macbook_image'></img>
               </div>
             </div>
         </div>
