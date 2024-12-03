@@ -206,6 +206,9 @@ body{
     color: #595959;
     padding: 10px 0 0 0;
     text-shadow: #b4fdc0 1px 1px 5px;
+    transition: all 1s ease;
+    transform: translateX(-50%);
+    filter: blur(10px);
 }
 #sub-heading-insert{
     font-size: 40px;
@@ -230,6 +233,11 @@ body{
     filter: blur(0);
 }
 #sub-heading-insert.show{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+}
+#text-detail-insert.show{
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);

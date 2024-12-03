@@ -9,6 +9,7 @@ import google_play from '../assets/playstore&appStoer/1664287128google-play-stor
 import app_store from '../assets/playstore&appStoer/app-store-google-play-button-png-favpng-FTFfzCVmWnedDG1qp2K2giafF.jpg';
 import '../assets/Fonts/fonts.css';
 function Page_home(){
+  {/* scripts Animation */}
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -81,17 +82,17 @@ function Page_home(){
         <div className='container-insert'>
           <div className='sub-container-insert'>
             <div className='large-heading'>
-              <h1 id='heading-insert'className='show'>APPLICATION จัดการภาษี & วิเคราะห์การใช้จ่าย</h1>
+              <h1 id='heading-insert'className='hidden'>APPLICATION จัดการภาษี & วิเคราะห์การใช้จ่าย</h1>
             </div>
             <div className='container-inside-insert'>
             <div className='container-sub-heading'>
-              <h2 id='sub-heading-insert' className='show'>เพียงปลายนิ้ว</h2>
-              <p id='text-detail-insert'>คุณก็จะสามารถจัดการระบบภาษีในชีวิต
+              <h2 id='sub-heading-insert' className='hidden'>เพียงปลายนิ้ว</h2>
+              <p id='text-detail-insert' className='hidden'>คุณก็จะสามารถจัดการระบบภาษีในชีวิต
 ประจำวันและยังสามารถช่วยวิเคราะห์คำนวณการจัดภาษีต่างๆได้โดยเพียงแค่
 ปลายนิ้ว</p>
             </div>
             <div className='phoneInsert'>
-              <img src={mobile_anaylisePage} alt='phone_insert' id='phone_insert'></img>
+              <img src={mobile_anaylisePage} alt='phone_insert' id='phone_insert' className='hidden'></img>
             </div>
           </div>
           </div>
