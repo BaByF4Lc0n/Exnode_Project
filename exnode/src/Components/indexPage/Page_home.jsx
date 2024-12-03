@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Page_home.css'
 import image_logo from '../assets/Logo_exnode.png';
 import image_logo_navigation from '../assets/logo_exnode_No-tect.png';
@@ -7,7 +7,19 @@ import mobile_anaylisePage from '../assets/mobile_img/mobile_analysit.png';
 import macbook from '../assets/Laptop_img/macbook_noScreen.png';
 import google_play from '../assets/playstore&appStoer/1664287128google-play-store-logo-png.png';
 import app_store from '../assets/playstore&appStoer/app-store-google-play-button-png-favpng-FTFfzCVmWnedDG1qp2K2giafF.jpg';
+import '../assets/Fonts/fonts.css';
 function Page_home(){
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  })
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
   return (
     // outside
     <div className='container-outside'>
@@ -65,7 +77,27 @@ function Page_home(){
             </div>
         </div>
       </div>
-      </div>
+      <section id='insertToProduct'>
+        <div className='container-insert'>
+          <div className='sub-container-insert'>
+            <div className='large-heading'>
+              <h1 id='heading-insert'className='show'>APPLICATION จัดการภาษี & วิเคราะห์การใช้จ่าย</h1>
+            </div>
+            <div className='container-inside-insert'>
+            <div className='container-sub-heading'>
+              <h2 id='sub-heading-insert' className='show'>เพียงปลายนิ้ว</h2>
+              <p id='text-detail-insert'>คุณก็จะสามารถจัดการระบบภาษีในชีวิต
+ประจำวันและยังสามารถช่วยวิเคราะห์คำนวณการจัดภาษีต่างๆได้โดยเพียงแค่
+ปลายนิ้ว</p>
+            </div>
+            <div className='phoneInsert'>
+              <img src={mobile_anaylisePage} alt='phone_insert' id='phone_insert'></img>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      </div>{/* end-inside */}
       </div>
     </div>
   )
