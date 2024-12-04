@@ -98,7 +98,8 @@ function Page_home(){
           </div>
         </div>
       </section>
-      </div>{/* end-inside */}
+      </div>
+      {/* end-inside */}
       </div>
     </div>
   )
