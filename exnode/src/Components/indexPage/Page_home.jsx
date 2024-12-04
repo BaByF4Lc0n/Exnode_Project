@@ -92,7 +92,7 @@ function Page_home(){
 ปลายนิ้ว</p>
             </div>
             <div className='phoneInsert'>
-              <img src={mobile_anaylisePage} alt='phone_insert' id='phone_insert' className='hidden'></img>
+              <img src={mobile_anaylisePage} alt='phone_insert' id='phone_insert' className='show'></img>
             </div>
           </div>
           </div>
