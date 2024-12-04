@@ -220,6 +220,7 @@ body{
     filter: blur(10px);
     color: #1DCB42;
 }
+
 /* Animation */
 .hidden{
     opacity: 0;
