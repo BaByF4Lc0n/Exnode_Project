@@ -96,8 +96,8 @@ body{
 /* large-container-banner */
 .banner{
     width: 100%;
-    height: 700px;
-    background: linear-gradient(to top, #d9f2e6, #ffffff);
+    height: 800px;
+    background: linear-gradient(to top, #C8FFE1, #ffffff);
     display: flex;
     justify-content: space-around;
 }
@@ -173,7 +173,8 @@ body{
 
 #insertToProduct{
     width: 100%;
-    height: 2000px;
+    height: 4000px;
+    background: radial-gradient(#C8FFE1, #ffffff);
 }
 /* spaceside */
 .container-insert{
@@ -181,6 +182,7 @@ body{
 }
 .container-inside-insert{
     display: flex;
+    justify-content: space-between;
 }
 #heading-insert{
     font-size: 40px;
@@ -189,7 +191,7 @@ body{
     padding: 130px 0 150px 0;
     color: #595959;
     text-shadow: #b4fdc0 1px 1px 5px;
-    transform: translateX(-50%);
+    transform: translateY(50%);
     filter: blur(10px);
     opacity: 0;
     transition: all 1s ease;
@@ -199,7 +201,6 @@ body{
 .container-sub-heading{
     width: 350px;
     height: 250px;
-
 }
 #text-detail-insert{
     font-size: 20px;
@@ -220,7 +221,16 @@ body{
     filter: blur(10px);
     color: #1DCB42;
 }
-
+#IconApplication{
+    transform: rotate(-50deg) translateX(50%);
+    filter: blur(10px);
+    opacity: 0;
+    transition: all 1s ease;
+    width: 300px;
+}
+#phone_insert{
+    width: 300px;
+}
 /* Animation */
 .hidden{
     opacity: 0;
@@ -229,7 +239,7 @@ body{
     transition: all 1s ease;
 }
 #heading-insert.show {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
     filter: blur(0);
 }
@@ -242,4 +252,11 @@ body{
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
+}
+#IconApplication.show{
+    transform: rotate(-10deg) translateX(0);
+    filter: blur(0);
+    opacity: 1;
+    transition: all 1s ease;
+    filter: drop-shadow(0px 0px 30px #00D09E);
 }

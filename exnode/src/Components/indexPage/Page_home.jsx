@@ -8,6 +8,7 @@ import macbook from '../assets/Laptop_img/macbook_noScreen.png';
 import google_play from '../assets/playstore&appStoer/1664287128google-play-store-logo-png.png';
 import app_store from '../assets/playstore&appStoer/app-store-google-play-button-png-favpng-FTFfzCVmWnedDG1qp2K2giafF.jpg';
 import '../assets/Fonts/fonts.css';
+import IconApplication from '../assets/LogoApplicationIcon.png';
 function Page_home(){
   {/* scripts Animation */}
   const observer = new IntersectionObserver((entries) => {
@@ -92,7 +93,10 @@ function Page_home(){
 ปลายนิ้ว</p>
             </div>
             <div className='phoneInsert'>
-              <img src={mobile_anaylisePage} alt='phone_insert' id='phone_insert' className='hidden'></img>
+              <img src={mobile_anaylisePage} alt='phone_insert' id='phone_insert' className='show'></img>
+            </div>
+            <div className='container_applicationIcon'>
+              <img src={IconApplication} alt='IconApplication' id='IconApplication' className='show'></img>
             </div>
           </div>
           </div>
