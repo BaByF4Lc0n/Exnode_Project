@@ -4,7 +4,7 @@ import Page_home from './Components/indexPage/Page_home';
 function App() {
   return (
     <div className="App">
-      <Page_home />
+      <Page_home /> 
     </div>
   );
 };

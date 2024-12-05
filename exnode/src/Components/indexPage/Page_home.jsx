@@ -2,14 +2,22 @@ import React, { useState } from 'react'
 import './Page_home.css'
 import image_logo from '../assets/Logo_exnode.png';
 import image_logo_navigation from '../assets/logo_exnode_No-tect.png';
-import login_page from'../loginPage/login.jsx';
 import mobile_anaylisePage from '../assets/mobile_img/mobile_analysit.png';
 import macbook from '../assets/Laptop_img/macbook_noScreen.png';
 import google_play from '../assets/playstore&appStoer/1664287128google-play-store-logo-png.png';
 import app_store from '../assets/playstore&appStoer/app-store-google-play-button-png-favpng-FTFfzCVmWnedDG1qp2K2giafF.jpg';
 import '../assets/Fonts/fonts.css';
 import IconApplication from '../assets/LogoApplicationIcon.png';
-function Page_home(){
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+// Import  pages
+import login_page from'../loginPage/login.jsx';
+import Home from './pages/Home';
+import Transactions from './pages/Transactions';
+import Analysis from './pages/Analysis';
+import List from './pages/Listings';
+import Contact from './pages/Contact';
+import News from './pages/News';
+function  Page_home(){
   {/* scripts Animation */}
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -35,6 +43,7 @@ function Page_home(){
       {/* inside */}
       <div className='body-section-layer2'>
         {/* navigationbar-section */}
+        <Router>
         <div className='navigation'>
           <div className='container-navigation'>
             <div className='sub-container-navigation'>
@@ -42,16 +51,37 @@ function Page_home(){
                 <img src={image_logo_navigation} alt='logo-inside' id='logo_exnode-navigationbar'></img>
               </div>
               <ul className='menubar'>
-                <li className='item-navigation '><a href='#'>หน้าแรก</a></li>
-                <li className='item-navigation '><a href='#'>ธุรกรรม</a></li>
-                <li className='item-navigation '><a href='#'>วิเคราะห์</a></li>
-                <li className='item-navigation '><a href='#'>รายการ</a></li>
-                <li className='item-navigation '><a href='#'>ติดต่อ</a></li>
-                <li className='item-navigation '><a href='#'>ข่าวสาร</a></li>
+              <li className="item-navigation">
+                <Link to="/">หน้าแรก</Link>
+              </li>
+              <li className="item-navigation">
+                <Link to="/transactions">ธุรกรรม</Link>
+              </li>
+              <li className="item-navigation">
+                <Link to="/analysis">วิเคราะห์</Link>
+              </li>
+              <li className="item-navigation">
+                <Link to="/listings">รายการ</Link>
+              </li>
+              <li className="item-navigation">
+                <Link to="/contact">ติดต่อ</Link>
+              </li>
+              <li className="item-navigation">
+                <Link to="/news">ข่าวสาร</Link>
+              </li>
               </ul>
             </div>
           </div>
         </div>
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/transactions" element={<Transactions />} />
+        <Route path="/analysis" element={<Analysis />} />
+        <Route path="/listings" element={<Listings />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/news" element={<News />} />
+      </Routes>
+        </Router>
         {/* end-navigation-section */}
         <div className='container-banner'>
         <div className='banner'>
@@ -93,10 +123,10 @@ function Page_home(){
 ปลายนิ้ว</p>
             </div>
             <div className='phoneInsert'>
-              <img src={mobile_anaylisePage} alt='phone_insert' id='phone_insert' className='show'></img>
+              <img src={mobile_anaylisePage} alt='phone_insert' id='phone_insert' className='hidden'></img>
             </div>
             <div className='container_applicationIcon'>
-              <img src={IconApplication} alt='IconApplication' id='IconApplication' className='show'></img>
+              <img src={IconApplication} alt='IconApplication' id='IconApplication' className='hidden'></img>
             </div>
           </div>
           </div>
