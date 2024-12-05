@@ -2,9 +2,7 @@ import React from 'react'
 
 function Trabnsaction() {
   return (
-    <div>
-      
-    </div>
+   <div>ยินดีต้อนรับสู่หน้าแรก</div>
   )
 }
 

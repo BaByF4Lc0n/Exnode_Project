@@ -212,7 +212,7 @@ body{
 }
 #text-detail-insert.hidden{
     transition: all 1s ease;
-    transform: translateX(-50%);
+    transform: translateX(-15%);
     filter: blur(10px);
 }
 #sub-heading-insert{
@@ -224,7 +224,7 @@ body{
 #sub-heading-insert.hidden{
     opacity: 0;
     transition: all 1s ease;
-    transform: translateX(-30%);
+    transform: translateX(-15%);
     filter: blur(10px);
 }
 #IconApplication{
@@ -240,7 +240,7 @@ body{
     width: 300px;
 }
 #phone_insert.hidden{
-    transform: translateY(80%);
+    transform: translateY(30%);
     opacity: 0;
     transition: all 1s ease;
     filter: blur(10px);
