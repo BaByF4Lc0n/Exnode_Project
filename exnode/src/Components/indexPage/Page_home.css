@@ -245,6 +245,20 @@ body{
     transition: all 1s ease;
     filter: blur(10px);
 }
+
+/* landing-page section_2 */
+.container-insert_2{
+    padding: 350px 0 0 0;
+}
+.imageGraph{
+    width: 350px;
+}
+#text-detail-insert_2{
+    width: 300px;
+}
+.container-graph_image{
+    display: block;
+}
 /* Animation */
 /* default custome */
 /* .hidden{
