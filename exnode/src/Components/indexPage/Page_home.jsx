@@ -11,6 +11,8 @@ import IconApplication from '../assets/LogoApplicationIcon.png';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import graph_img_1 from '../assets/graph_img_1.png';
 import graph_img_2 from '../assets/graph_img_2.png';
+// navigationbar
+import navigationbar from '../NavigationBar/navbar.jsx';
 // Import  pages
 import login_page from'../loginPage/login.jsx';
 import Home from '../indexPage/Page_home.jsx';
@@ -45,45 +47,8 @@ function  Page_home(){
       {/* inside */}
       <div className='body-section-layer2'>
         {/* navigationbar-section */}
-        {/* <Router> */}
-        <div className='navigation'>
-          <div className='container-navigation'>
-            <div className='sub-container-navigation'>
-              <div className='container-logo-navigation'>
-                <img src={image_logo_navigation} alt='logo-inside' id='logo_exnode-navigationbar'></img>
-              </div>
-              <ul className='menubar'>
-              <li className="item-navigation">
-                <a href='/indexPage/Page_home.jsx'>หน้าแรก</a>
-              </li>
-              <li className="item-navigation">
-                <a href='/TransactionPage/Trabnsaction.jsx'>ธุรกรรม</a>
-              </li>
-              <li className="item-navigation">
-                <a href='../AnalystPage/analyst.jsx'>วิเคราะห์</a>
-              </li>
-              <li className="item-navigation">
-                <a href='../SchedulePage/Schedule.jsx'>รายการ</a>
-              </li>
-              <li className="item-navigation">
-                <a href='../ContactPage/Contact.jsx'>ติดต่อ</a>
-              </li>
-              <li className="item-navigation">
-                <a href='../NewsPage/News.jsx'>ข่าวสาร</a>
-              </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        {/* <Routes>
-          <Route path='../indexPage/Page_home.jsx' element={<Home />} />
-          <Route path='../TransactionPage/Trabnsaction.jsx' element={<Transactions />} />
-          <Route path='../AnalystPage/analyst.jsx' element={<Analysis />} />
-          <Route path='../SchedulePage/Schedule.jsx' element={<Schedule />} />
-          <Route path='../ContactPage/Contact.jsx' element={<Contact />} />
-          <Route path='../NewsPage/News.jsx' element={<News />} />
-        </Routes> */}
-        {/* </Router> */}
+        {/* แก้navbarให้สามารถใช้ได้ */}
+        <navigationbar/>
         {/* end-navigation-section */}
         <div className='container-banner'>
         <div className='banner'>
