@@ -237,7 +237,7 @@ body{
     transition: all 1s ease;
 }
 #phone_insert{
-    width: 300px;
+    width: 400px;
 }
 #phone_insert.hidden{
     transform: translateY(30%);
@@ -245,7 +245,6 @@ body{
     transition: all 1s ease;
     filter: blur(10px);
 }
-
 /* landing-page section_2 */
 .container-insert_2{
     padding: 350px 0 0 0;
@@ -256,8 +255,25 @@ body{
 #text-detail-insert_2{
     width: 300px;
 }
-.container-graph_image{
+.container-graph_image_section_2{
     display: block;
+    padding: 0 0 0 150px;
+}
+.graphImage_1{
+    width: 450px;
+    rotate: -7deg;
+    padding-bottom: 60px;
+    border-radius: 20px;
+}
+.graphImage_2{
+    width: 350px;
+}
+#phone_insert_2{
+    width: 100px;
+}
+#text-detail-insert_2{
+    width: 350px;
+    font-size: 30px;
 }
 /* Animation */
 /* default custome */

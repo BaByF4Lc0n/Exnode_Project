@@ -9,6 +9,7 @@ import app_store from '../assets/playstore&appStoer/app-store-google-play-button
 import '../assets/Fonts/fonts.css';
 import IconApplication from '../assets/LogoApplicationIcon.png';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import mobile_pageMain from '../assets/mobile_img/mobiile_pageMain_1.png';
 import graph_img_1 from '../assets/graph_img_1.png';
 import graph_img_2 from '../assets/graph_img_2.png';
 // navigationbar
@@ -118,7 +119,7 @@ function  Page_home(){
 ปลายนิ้ว</p>
             </div>
             <div className='phoneInsert'>
-              <img src={mobile_anaylisePage} alt='phone_insert' id='phone_insert' className='hidden'></img>
+              <img src={mobile_pageMain} alt='phone_insert' id='phone_insert' className='hidden'></img>
             </div>
             <div className='container_applicationIcon'>
               <img src={IconApplication} alt='IconApplication' id='IconApplication' className='hidden'></img>
@@ -126,19 +127,21 @@ function  Page_home(){
           </div>
           </div>
         </div>
+        {/* section_2 */}
         <div className='container-insert_2'>
           <div className='conatainer-sub-insert_2'>
           <div className='sub-container-insert'>
             <div className='container-inside-insert'>
-            <div className='container-graph_image'>
-              <img src={graph_img_1} alt='graph_image_2' id='graph_image_1' className='hidden imageGraph'></img>
-              <img src={graph_img_2} alt='graph_image_2' id='graph_image_2' className='hidden imageGraph'></img>
+            <div className='container-graph_image_section_2'>
+              <img src={graph_img_1} alt='graph_image_2' id='graph_image_1' className='show imageGraph graphImage_1'></img>
+              <br></br>
+              <img src={graph_img_2} alt='graph_image_2' id='graph_image_2' className='show imageGraph graphImage_2'></img>
             </div>
             <div className='phoneInsert'>
               <img src={mobile_anaylisePage} alt='phone_insert' id='phone_insert' className='hidden'></img>
             </div>
             <div className='container_applicationIcon'>
-              <p id='text-detail-insert_2' className='hidden'>สามารถแสดงกราฟออกมาเป็น
+              <p id='text-detail-insert_2' className='show   '>สามารถแสดงกราฟออกมาเป็น
               กิจกรรม รายวัน รายสัปดาห์ รายเดือน รายปี</p>
             </div>
           </div>
