@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import mobile_pageMain from '../assets/mobile_img/mobiile_pageMain_1.png';
 import graph_img_1 from '../assets/graph_img_1.png';
 import graph_img_2 from '../assets/graph_img_2.png';
+import mobile_transaction from '../assets/mobile_img/mobile_transaction_.png';
 // navigationbar
 import navigationbar from '../NavigationBar/navbar.jsx';
 // Import  pages
@@ -133,16 +134,36 @@ function  Page_home(){
           <div className='sub-container-insert'>
             <div className='container-inside-insert'>
             <div className='container-graph_image_section_2'>
-              <img src={graph_img_1} alt='graph_image_2' id='graph_image_1' className='show imageGraph graphImage_1'></img>
+              <img src={graph_img_1} alt='graph_image_2' id='graph_image_1' className='hidden imageGraph graphImage_1'></img>
               <br></br>
-              <img src={graph_img_2} alt='graph_image_2' id='graph_image_2' className='show imageGraph graphImage_2'></img>
+              <img src={graph_img_2} alt='graph_image_2' id='graph_image_2' className='hidden imageGraph graphImage_2'></img>
             </div>
             <div className='phoneInsert'>
               <img src={mobile_anaylisePage} alt='phone_insert' id='phone_insert' className='hidden'></img>
             </div>
-            <div className='container_applicationIcon'>
-              <p id='text-detail-insert_2' className='show   '>สามารถแสดงกราฟออกมาเป็น
+            <div className='container_applicationIcon hidden'>
+              <p id='text-detail-insert_2' className='show'>สามารถแสดงกราฟออกมาเป็น
               กิจกรรม รายวัน รายสัปดาห์ รายเดือน รายปี</p>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+        {/* section_3 */}
+        <div className='container-insert_3'>
+          <div className='conatainer-sub-insert_2'>
+          <div className='sub-container-insert'>
+            <div className='container-inside-insert'>
+            <div className='container-detail_section_3'>
+              <h1 id='heading_section_3' className='hidden'>รายรับรายจ่ายรายวัน</h1>
+              <br></br>
+              <p id='text-detail-insert_3' className='hidden'>แสดงผลการรายรับรายจ่าย พร้อมการคำนวณค่าภาษีที่ต้องจ่าย</p>
+            </div>
+            <div className='phoneInsert'>
+              <img src={mobile_transaction} alt='phone_insert' id='phone_insert' className='hidden'></img>
+            </div>
+            <div className='container_applicationIcon hidden'>
+              {/* nothing is space side */}
             </div>
           </div>
           </div>
@@ -150,6 +171,18 @@ function  Page_home(){
         </div>
       </section>
       </div>
+      {/* footer */}
+      <footer>
+        <div className='container-footer'>
+          <div className='container-inside-footer'>
+            <div className='container-logo-footer'>
+              <img src={image_logo_navigation} alt='logo-footer' id='logo_exnode-footer'></img>
+            </div>
+            <div className='container-text-footer'>
+            </div>
+          </div>
+        </div>
+      </footer>
       {/* end-inside */}
       </div>
     </div>
