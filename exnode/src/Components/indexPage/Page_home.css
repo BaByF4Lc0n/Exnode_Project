@@ -34,7 +34,7 @@ body{
 /* body-layer2 */
 .body-section-layer2{
     width: 1600px;
-    height: 5000px;
+    height: auto !important;
     background-color: #ffff;
     margin: 0 auto;
     border-radius: 10px;
@@ -320,53 +320,33 @@ body{
 }
 
 /* footer section */
-.footer {
-    background-color: #6fe89f;
-    padding: 20px;
-    color: white;
+footer{
+    width:100%;
+    height: 300px;
+    background: #73F5B4;
+    border-radius: 0 0 10px 10px;
+    padding: 50px 0 0 0;
+}
+.layOut_footer{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer-left, .footer-middle, .footer-right, .footer-bottom {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .footer-logo {
-    width: 40px;
-    height: auto;
-  }
-  
-  .footer-middle, .footer-right, .footer-bottom {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  .footer-middle ul, .footer-right ul, .footer-bottom ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .footer-middle li, .footer-right li, .footer-bottom li {
-    margin: 5px 0;
-  }
-  
-  .footer-social {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .footer-social a img {
-    width: 30px;
-    height: auto;
-  }
-  
-  .footer-copyright {
-    text-align: center;
-    margin-top: 20px;
-  }
+}
+.container-logo-footer{
+    width: 500px;
+    padding: 20px 0 0 0;
+    margin-right: 120px;
+}
+.List-exnode{
+    width: 300px;
+}
+.container-list-exnode{
+    width: 300px;
+}
+.container_company{
+    width: 300px;
+}
+.F_padding{
+    padding-left: 100px;
+}
 /* Animation */
 /* default custome */
 .hidden{

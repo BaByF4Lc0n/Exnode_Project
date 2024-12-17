@@ -170,19 +170,83 @@ function  Page_home(){
           </div>
         </div>
       </section>
-      </div>
-      {/* footer */}
-      <footer>
+       {/* footer */}
+       <footer>
         <div className='container-footer'>
-          <div className='container-inside-footer'>
-            <div className='container-logo-footer'>
-              <img src={image_logo_navigation} alt='logo-footer' id='logo_exnode-footer'></img>
-            </div>
-            <div className='container-text-footer'>
+          <div className='sub-container-footer'>
+            <div className='layOut_footer'>
+              <div className='container-logo-footer F_padding'>
+                <div className='sub-container_logo_footer'>
+                  <img src={image_logo_navigation} className='image-logo-footer'></img>
+                </div>
+                <div className='container-text-footer'>
+                  <p id='text-footer'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quo quam laborum accusamus omnis fuga esse praesentium </p>
+                </div>
+              </div>
+              <div className='List-exnode F_padding'>
+                <div childrenName='container-title-exnode'>
+                  <h2 id='title-footer'>EXNODE</h2>
+                </div>
+                <div childrenName='container-list-exnode'>
+                  <ul className='Menu_list'>
+                    <li>
+                      <a href='/TransactionPage/Trabnsaction.jsx'>หน้าแรก</a>
+                    </li>
+                    <li>
+                      <a href='/TransactionPage/Trabnsaction.jsx'>ธุรกรรม</a>
+                    </li>
+                    <li>
+                      <a href='/TransactionPage/Trabnsaction.jsx'>วิเคราะห์</a>
+                    </li>
+                    <li>
+                      <a href='/TransactionPage/Trabnsaction.jsx'>รายการ</a>
+                    </li>
+                    <li>
+                      <a href='/TransactionPage/Trabnsaction.jsx'>ติดต่อ</a>
+                    </li>
+                    <li>
+                      <a href='/TransactionPage/Trabnsaction.jsx'>ข่าวสาร</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className='container_company F_padding'>
+                <div childrenName='container-title-exnode'>
+                  <h2 id='title-footer'>บริษัท</h2>
+                </div>
+                <ul className='Menu_list'>
+                    <li>
+                      <a href='/TransactionPage/Trabnsaction.jsx'>บัญชี</a>
+                    </li>
+                    <li>
+                      <a href='/TransactionPage/Trabnsaction.jsx'>ผู้พัฒนา</a>
+                    </li>
+                    <li>
+                      <a href='/TransactionPage/Trabnsaction.jsx'>เกี่ยวกับบริษัทเรา</a>
+                    </li>
+                    <li>
+                      <a href='/TransactionPage/Trabnsaction.jsx'>นโยบาย</a>
+                    </li>
+                  </ul>
+                </div>     
+                <div className='container_media F_padding'>
+                <div childrenName='container-title-exnode'>
+                  <h2 id='title-footer'>บทความ</h2>
+                </div>
+                <ul className='Menu_list'>
+                    <li>
+                      <a href='/TransactionPage/Trabnsaction.jsx'>ความรู้ภาษี</a>
+                    </li>
+                    <li>
+                      <a href='/TransactionPage/Trabnsaction.jsx'>ข่าวสาร</a>
+                    </li>
+                  </ul>
+                </div>                   
             </div>
           </div>
         </div>
       </footer>
+      </div>
       {/* end-inside */}
       </div>
     </div>
