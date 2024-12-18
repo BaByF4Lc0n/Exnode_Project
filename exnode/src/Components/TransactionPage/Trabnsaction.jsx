@@ -6,6 +6,9 @@ import macbook from '../assets/Laptop_img/macbook_noScreen.png';
 import google_play from '../assets/playstore&appStoer/1664287128google-play-store-logo-png.png';
 import app_store from '../assets/playstore&appStoer/app-store-google-play-button-png-favpng-FTFfzCVmWnedDG1qp2K2giafF.jpg';
 import '../assets/Fonts/fonts.css';
+import '../TransactionPage/transactionPage.css';
+import riseUp from '..//assets/riseUp.png';
+import ToDown from '..//assets/ToDown.png';
 import IconApplication from '../assets/LogoApplicationIcon.png';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import mobile_pageMain from '../assets/mobile_img/mobiile_pageMain_1.png';
@@ -69,7 +72,48 @@ function Trabnsaction() {
         </div>
       </div>
       {/* end-navigation-section */}
-
+      {/* section_2 */}
+      <section id='section_2'>
+        <center>
+        <div className='container-section_2'>
+          <div className='main-container-section_2'>
+            <div className='layout_section_2'>
+            <center>
+            <div className='container-heading-section_2'>
+              <div className='heading-section_2_sub_1'>
+                <div className='container-totalBalance'>
+                  <img src={riseUp} className='icon-totalBalance'></img>
+                  <h3 className='text-totalBalance'>Total Balance</h3>
+                </div>
+                <div className='count-totalBalance'>
+                  <strong>0 THB</strong>
+                </div>
+              </div> 
+              <div className='spacer'>
+              </div> 
+              <div className='heading-section_2_sub_1'>
+                <div className='container-totalBalance'>
+                  <img src={ToDown} className='icon-totalBalance'></img>
+                  <h3 className='text-totalBalance'>Total Balance</h3>
+                </div>
+                <div className='count-totalBalance'>
+                  <strong>0 THB</strong>
+                </div>
+              </div>  
+            </div>  
+            <div className='container_buttonCalculate'>
+              <a href="#"><div className='buttonCalculate'>
+                <p id='text-buttonCalculate'>เริ่มคำนวณ</p>
+              </div>
+              </a>
+            </div>
+            </center>
+            </div>
+          </div>
+        </div>
+        <h1 id='heading_name-outside' className='button_list_transaction'>EXNODE</h1>
+        </center>
+      </section>
      {/* footer */}
      <footer>
       <div className='container-footer'>
