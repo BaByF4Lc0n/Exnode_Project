@@ -160,9 +160,9 @@ function  Page_home(){
               <p id='text-detail-insert_3' className='hidden'>แสดงผลการรายรับรายจ่าย พร้อมการคำนวณค่าภาษีที่ต้องจ่าย</p>
             </div>
             <div className='phoneInsert'>
-              <img src={mobile_transaction} alt='phone_insert' id='phone_insert' className='hidden'></img>
+              <img src={mobile_transaction} alt='phone_insert' id='phone_insert' className='show'></img>
             </div>
-            <div className='container_applicationIcon hidden'>
+            <div className='container_applicationIcon show'>
               {/* nothing is space side */}
             </div>
           </div>

@@ -5,8 +5,8 @@ import Trabnsaction from './Components/TransactionPage/Trabnsaction.jsx';
 function App() {
   return (
     <div className="App">
-      {/* <Page_home />  */}
-      <Trabnsaction />
+      <Page_home /> 
+      {/* <Trabnsaction /> */}
     </div>
   );
 };
