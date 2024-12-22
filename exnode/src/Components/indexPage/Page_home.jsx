@@ -13,6 +13,7 @@ import mobile_pageMain from '../assets/mobile_img/mobiile_pageMain_1.png';
 import graph_img_1 from '../assets/graph_img_1.png';
 import graph_img_2 from '../assets/graph_img_2.png';
 import mobile_transaction from '../assets/mobile_img/mobile_transaction_.png';
+import catagory_image from '../assets/catagory_image.png';
 // navigationbar
 import navigationbar from '../NavigationBar/navbar.jsx';
 // Import  pages
@@ -160,15 +161,33 @@ function  Page_home(){
               <p id='text-detail-insert_3' className='hidden'>แสดงผลการรายรับรายจ่าย พร้อมการคำนวณค่าภาษีที่ต้องจ่าย</p>
             </div>
             <div className='phoneInsert'>
-              <img src={mobile_transaction} alt='phone_insert' id='phone_insert' className='show'></img>
+              <img src={mobile_transaction} alt='phone_insert' id='phone_insert' className='hidden'></img>
             </div>
-            <div className='container_applicationIcon show'>
+            <div className='container_applicationIcon hidden'>
               {/* nothing is space side */}
             </div>
           </div>
           </div>
           </div>
         </div>
+        {/* section -4 */}
+        <div className='container-insert_4'>
+          <div className='conatainer-sub-insert_2'>
+          <div className='sub-container-insert'>
+            <div className='container-inside-insert'>
+            <div className='container-graph_image_section_4'>
+              <img src={catagory_image} alt='graph_image_2' id='graph_image_3' className='hidden imageGraph graphImage_3'></img>
+            </div>
+            <div className='phoneInsert'>
+              <img src={mobile_anaylisePage} alt='phone_insert' id='phone_insert' className='hidden'></img>
+            </div>
+            <div className='container_applicationIcon hidden'>
+              <p id='text-detail-insert_4' className='show'>สามารถแสดงกราฟออกมาเป็น</p>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
       </section>
        {/* footer */}
        <footer>
