@@ -14,6 +14,9 @@ import graph_img_1 from '../assets/graph_img_1.png';
 import graph_img_2 from '../assets/graph_img_2.png';
 import mobile_transaction from '../assets/mobile_img/mobile_transaction_.png';
 import catagory_image from '../assets/catagory_image.png';
+import facebook_logo from '../assets/facebook_logo.png';
+import instargram_logo from '../assets/Instagram_icon.png';
+import twitter_logo from '../assets/logo_twitter.webp';
 // navigationbar
 import navigationbar from '../NavigationBar/navbar.jsx';
 // Import  pages
@@ -143,7 +146,7 @@ function  Page_home(){
               <img src={mobile_anaylisePage} alt='phone_insert' id='phone_insert' className='hidden'></img>
             </div>
             <div className='container_applicationIcon hidden'>
-              <p id='text-detail-insert_2' className='show'>สามารถแสดงกราฟออกมาเป็น
+              <p id='text-detail-insert_2'>สามารถแสดงกราฟออกมาเป็น
               กิจกรรม รายวัน รายสัปดาห์ รายเดือน รายปี</p>
             </div>
           </div>
@@ -163,7 +166,7 @@ function  Page_home(){
             <div className='phoneInsert'>
               <img src={mobile_transaction} alt='phone_insert' id='phone_insert' className='hidden'></img>
             </div>
-            <div className='container_applicationIcon hidden'>
+            <div className='container_applicationIcon'>
               {/* nothing is space side */}
             </div>
           </div>
@@ -181,14 +184,25 @@ function  Page_home(){
             <div className='phoneInsert'>
               <img src={mobile_anaylisePage} alt='phone_insert' id='phone_insert' className='hidden'></img>
             </div>
-            <div className='container_applicationIcon hidden'>
-              <p id='text-detail-insert_4' className='show'>สามารถแสดงกราฟออกมาเป็น</p>
+            <div className='container-text_section_4'>
+              <div className='sub-container-heading_section_4'>
+                <div className='container-heading_section_4'>
+                  <h1 className='heading_section_4'  cl>หมวดหมู่การใช้จ่าย</h1>
+                </div>
+                <div className='container-text_detail_section_4'>
+                  <p className='text_section_4'>สามารถแยกหมวดหมู่การใช้จ่ายได้มากมาย</p>
+                </div>
+              </div>
             </div>
           </div>
           </div>
           </div>
           </div>
       </section>
+      {/* large-section-2 */}
+      <div className='container-large-section-2'>
+
+      </div>
        {/* footer */}
        <footer>
         <div className='container-footer'>
@@ -261,6 +275,17 @@ function  Page_home(){
                     </li>
                   </ul>
                 </div>                   
+            </div>
+          </div>
+        </div>
+        {/* secondary-fonter */}
+        <div className='container-secondary-footer'>
+          <div className='sub-container-secondary-footer'>
+            <div className='layout-secondary-footer'>
+              <p>Copyright © 2024 iTAX Inc. All rights reserved.</p>
+              <img src={facebook_logo} className='icon-contact-secondary' alt='facebook'></img>
+              <img src={instargram_logo} className='icon-contact-secondary' alt='instargram'></img>
+              <img src={twitter_logo} className='icon-contact-secondary' alt='twitter'></img>
             </div>
           </div>
         </div>
